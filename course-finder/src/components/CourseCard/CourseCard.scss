@@ -1,0 +1,88 @@
+.card {
+	backdrop-filter: blur(1px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 12px;
+	border: 2px solid rgba(209, 213, 219, 0.3);
+	// box-shadow: rgba(51, 35, 35, 0.4) 0px 10px 20px;
+	// transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+	width: 400px;
+	height: 350px;
+	margin: auto 5px 50px;
+	padding-top: 10px;
+
+	.cardTitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 25px 15px;
+		h4 {
+			margin: 0;
+			font-weight: 400;
+			color: green;
+		}
+		p {
+			margin: 0;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+	}
+
+	.courseDetails {
+		margin: 10px;
+		padding: 10px;
+	}
+	&:hover {
+		transform: scale(1.03);
+		// font-size: 1.1rem;
+		cursor: pointer;
+		transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+	}
+}
+.subHeading {
+	display: flex;
+	align-items: flex-start;
+	color: grey;
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.cardFooter {
+	display: flex;
+	justify-content: space-between;
+}
+.provider {
+	display: flex;
+	align-items: flex-start;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
+.courseIssuer {
+	display: flex;
+	align-items: flex-start;
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color: #ed6c02;
+	font-weight: 400;
+}
+.courseSubject {
+	display: flex;
+	align-items: flex-start;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.courseName {
+	display: flex;
+	align-items: flex-start;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+	color: rgb(17, 41, 79);
+}
+h4,
+h3 {
+	margin: 0;
+}
+
